@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Rsponsive Website</title>
+                <style>
+                                body {
+                                                border: 1px solid skyblue;
+                                                max-width: 1140px;
+                                                margin: 0 auto;
+                                }
+
+                                .img-container {
+                                                display: flex;
+
+                                }
+
+                                .img-container div {
+                                                width: 50%;
+                                }
+
+                                .img-container img {
+                                                width: 100%;
+                                }
+
+                                @media screen and (max-width: 576px) {
+                                                .img-container {
+                                                                flex-direction: column-reverse;
+                                                }
+
+                                                .img-container div {
+                                                                width: 100%;
+                                                }
+
+                                }
+                </style>
+</head>
+
+<body>
+                <h1>Respnsive Website</h1>
+                <header>
+                                <ol>
+                                                <!-- li*7 -->
+                                                <li>viewport Meta Tag</li>
+                                                <li>Css Relative Unit</li>
+                                                <li>body max width and horizontal centre align</li>
+                                                <li>image fluid </li>
+                                                <li>two column flex and use media query with flex direction column</li>
+                                                <li>multi column: grid layout</li>
+                                                <li>menu responsive: will need javascript</li>
+                                </ol>
+                </header>
+                <main>
+                                <div class="img-container">
+                                                <div><img src="images/food.jpg" alt=""></div>
+                                                <div><img src="images/Tigers-.jpeg" alt=""></div>
+                                </div>
+
+
+                </main>
+</body>
+
+</html>
